@@ -52,10 +52,26 @@ php spark routes
 ```
 php spark serve
 ```
-![10](https://user-images.githubusercontent.com/56241285/122014922-d637fe80-cde9-11eb-9bdf-9e48707f8cdf.png)
+![10](https://user-images.githubusercontent.com/56241285/122060682-fed6ed00-ce17-11eb-8ea7-e0d522b237b9.png)
 - Selanjutnya mencoba akses route yang telah dibuat dengan mengakses http://localhost:8080/contact
 - Terjadi error file not found dikarenakan tidak ada file/page untuk halaman contact
 ![11](https://user-images.githubusercontent.com/56241285/122015578-6b3af780-cdea-11eb-8b0e-457b7446df8f.png)
 
 ## Langkah 2 - Membuat Controller
-Membuat file page.php di dalam file app/Controllers
+- Membuat file page.php di dalam file app/Controllers
+![12](https://user-images.githubusercontent.com/56241285/122061243-86bcf700-ce18-11eb-9856-018744a7a61e.png)
+- Kemudian refresh browser maka halaman sudah dapat diakses dan menampilkan hasilnya
+![13](https://user-images.githubusercontent.com/56241285/122061298-91778c00-ce18-11eb-88d5-059c5366cb02.png)
+- Menambahkan method baru pada controller page
+- Method ini dapat diakses dengan menggunakan alamat: http://localhost:8080/page/tos
+![14](https://user-images.githubusercontent.com/56241285/122061797-0b0f7a00-ce19-11eb-9c15-cd3c1a0f46ca.png)
+![15](https://user-images.githubusercontent.com/56241285/122061835-14004b80-ce19-11eb-8b5b-5433c97575f8.png)
+
+## Langkah 3 - Membuat View
+- Membuat file about.php di dalam folder app/view/about.php
+![16](https://user-images.githubusercontent.com/56241285/122063767-c258c080-ce1a-11eb-8f74-a890327c70c4.png)
+- Mengubah method about dalam controller page
+![17](https://user-images.githubusercontent.com/56241285/122063984-f2a05f00-ce1a-11eb-8a1a-5a1e43be7f53.png)
+- Maka akan tampil seperti ini
+![18](https://user-images.githubusercontent.com/56241285/122064047-03e96b80-ce1b-11eb-94cb-0008417f67e4.png)
+
