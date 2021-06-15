@@ -73,5 +73,26 @@ php spark serve
 - Mengubah method about dalam controller page
 ![17](https://user-images.githubusercontent.com/56241285/122063984-f2a05f00-ce1a-11eb-8a1a-5a1e43be7f53.png)
 - Maka akan tampil seperti ini
+
 ![18](https://user-images.githubusercontent.com/56241285/122064047-03e96b80-ce1b-11eb-94cb-0008417f67e4.png)
 
+## Langkah 4 - Membuat Layout Web dengan CSS
+- Buat file css pada direktori public dengan nama style.css (copy file dari praktikum lab4_layout)
+![19](https://user-images.githubusercontent.com/56241285/122067763-0ac5ad80-ce1e-11eb-90fa-0e4ad3d7ee4f.png)
+- Kemudian buat folder template di dalam Folder view, lalu buat file header.php dan footer.php
+![20](https://user-images.githubusercontent.com/56241285/122068590-ba9b1b00-ce1e-11eb-99ee-968652314b58.png)
+![21](https://user-images.githubusercontent.com/56241285/122068611-c090fc00-ce1e-11eb-9120-62119eb16262.png)
+- Kemudian ubah file about.php seperti berikut
+![22](https://user-images.githubusercontent.com/56241285/122069455-68a6c500-ce1f-11eb-9f27-16dacdf76dd0.png)
+- Kemudian refresh browser atau akses alamat http://localhost:8080/about
+![23](https://user-images.githubusercontent.com/56241285/122069489-6f353c80-ce1f-11eb-8b31-6bcddb643650.png)
+
+# Pertanyaan dan Tugas
+## Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama
+# Hasil tugas
+- Tampilan about
+![24](https://user-images.githubusercontent.com/56241285/122071627-1797d080-ce21-11eb-93cf-6e41adf971d1.png)
+- Tampilan artikel
+![25](https://user-images.githubusercontent.com/56241285/122071649-1e264800-ce21-11eb-9557-828b285e07f3.png)
+- Tampilan Kontak
+![26](https://user-images.githubusercontent.com/56241285/122071675-23839280-ce21-11eb-83ac-0836435d288e.png)
