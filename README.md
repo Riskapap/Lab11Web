@@ -15,12 +15,17 @@ Sebelum memulai menggunakan Framework Codeigniter, perlu dilakukan konfigurasi p
 -  libcurl (opsional), jika ingin pakai Curl.
 
 Untuk mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian Apache klik Config -> PHP.ini
+
 ![1](https://user-images.githubusercontent.com/56241285/121994907-53ef1080-cdd0-11eb-86bc-80d5e6468593.png)
+
 Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server
+
 ![2](https://user-images.githubusercontent.com/56241285/122007762-7b4ed900-cde2-11eb-9396-f3d9a2ae0f1f.png)
+
 Kemudian buat folder baru dengan nama lab11_php_ci pada folder htdocs
 
 ![3](https://user-images.githubusercontent.com/56241285/121995606-6b7ac900-cdd1-11eb-999b-d241326151c4.png)
+
 ### Instalasi Codeigniter 4
 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara 
 manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara 
