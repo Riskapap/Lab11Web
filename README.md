@@ -36,69 +36,107 @@ manual.
 - Ubah nama direktory framework-4.x.xx menjadi ci4.
 - Buka browser dengan alamat http://localhost/lab11_php_ci/ci4/public/
 ![4](https://user-images.githubusercontent.com/56241285/122007778-830e7d80-cde2-11eb-879e-ee4a84579c7c.png)
+
 ### Menjalankan CLI (Command Line Interface)
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat (xampp/htdocs/lab11_ci/ci4/)
-![5](https://user-images.githubusercontent.com/56241285/122009313-27dd8a80-cde4-11eb-90c3-ef5c99e217d1.png)
-Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah : (php spark)
-![6](https://user-images.githubusercontent.com/56241285/122009337-2d3ad500-cde4-11eb-8fdc-d2da85014e81.png)
-Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
-![7](https://user-images.githubusercontent.com/56241285/122013514-70974280-cde8-11eb-8254-a7d8fbb980cf.png)
-![8](https://user-images.githubusercontent.com/56241285/122015353-3af35900-cdea-11eb-80c4-7dff95adb55f.png)
 
+![5](https://user-images.githubusercontent.com/56241285/122009313-27dd8a80-cde4-11eb-90c3-ef5c99e217d1.png)
+
+Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah : (php spark)
+
+![6](https://user-images.githubusercontent.com/56241285/122009337-2d3ad500-cde4-11eb-8fdc-d2da85014e81.png)
+
+Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
+
+![7](https://user-images.githubusercontent.com/56241285/122013514-70974280-cde8-11eb-8254-a7d8fbb980cf.png)
+
+![8](https://user-images.githubusercontent.com/56241285/122015353-3af35900-cdea-11eb-80c4-7dff95adb55f.png)
 
 ## Langkah 1 - Membuat Route
 
 - Router terletak pada file app/config/Routes.php
+
 ![9](https://user-images.githubusercontent.com/56241285/122014171-19de3880-cde9-11eb-9eb5-6a4e4602c046.png)
+
 - Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
+
 ```
 php spark routes
 ```
+
 - Ketik perintah berikut untuk menjalankan server CI 4 pada port 8080.
+
 ```
 php spark serve
 ```
+
 ![10](https://user-images.githubusercontent.com/56241285/122060682-fed6ed00-ce17-11eb-8ea7-e0d522b237b9.png)
+
 - Selanjutnya mencoba akses route yang telah dibuat dengan mengakses http://localhost:8080/contact
+
 - Terjadi error file not found dikarenakan tidak ada file/page untuk halaman contact
+
 ![11](https://user-images.githubusercontent.com/56241285/122015578-6b3af780-cdea-11eb-8b0e-457b7446df8f.png)
 
 ## Langkah 2 - Membuat Controller
+
 - Membuat file page.php di dalam file app/Controllers
+
 ![12](https://user-images.githubusercontent.com/56241285/122061243-86bcf700-ce18-11eb-9856-018744a7a61e.png)
+
 - Kemudian refresh browser maka halaman sudah dapat diakses dan menampilkan hasilnya
+
 ![13](https://user-images.githubusercontent.com/56241285/122061298-91778c00-ce18-11eb-88d5-059c5366cb02.png)
+
 - Menambahkan method baru pada controller page
+
 - Method ini dapat diakses dengan menggunakan alamat: http://localhost:8080/page/tos
+
 ![14](https://user-images.githubusercontent.com/56241285/122061797-0b0f7a00-ce19-11eb-9c15-cd3c1a0f46ca.png)
+
 ![15](https://user-images.githubusercontent.com/56241285/122061835-14004b80-ce19-11eb-8b5b-5433c97575f8.png)
 
 ## Langkah 3 - Membuat View
 - Membuat file about.php di dalam folder app/view/about.php
+
 ![16](https://user-images.githubusercontent.com/56241285/122063767-c258c080-ce1a-11eb-8f74-a890327c70c4.png)
+
 - Mengubah method about dalam controller page
+
 ![17](https://user-images.githubusercontent.com/56241285/122063984-f2a05f00-ce1a-11eb-8a1a-5a1e43be7f53.png)
+
 - Maka akan tampil seperti ini
 
 ![18](https://user-images.githubusercontent.com/56241285/122064047-03e96b80-ce1b-11eb-94cb-0008417f67e4.png)
 
 ## Langkah 4 - Membuat Layout Web dengan CSS
 - Buat file css pada direktori public dengan nama style.css (copy file dari praktikum lab4_layout)
+
 ![19](https://user-images.githubusercontent.com/56241285/122067763-0ac5ad80-ce1e-11eb-90fa-0e4ad3d7ee4f.png)
+
 - Kemudian buat folder template di dalam Folder view, lalu buat file header.php dan footer.php
+
 ![20](https://user-images.githubusercontent.com/56241285/122068590-ba9b1b00-ce1e-11eb-99ee-968652314b58.png)
 ![21](https://user-images.githubusercontent.com/56241285/122068611-c090fc00-ce1e-11eb-9120-62119eb16262.png)
+
 - Kemudian ubah file about.php seperti berikut
+
 ![22](https://user-images.githubusercontent.com/56241285/122069455-68a6c500-ce1f-11eb-9f27-16dacdf76dd0.png)
 - Kemudian refresh browser atau akses alamat http://localhost:8080/about
+
 ![23](https://user-images.githubusercontent.com/56241285/122069489-6f353c80-ce1f-11eb-8b31-6bcddb643650.png)
 
 # Pertanyaan dan Tugas
 ## Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama
 # Hasil tugas
 - Tampilan about
+
 ![24](https://user-images.githubusercontent.com/56241285/122071627-1797d080-ce21-11eb-93cf-6e41adf971d1.png)
+
 - Tampilan artikel
+
 ![25](https://user-images.githubusercontent.com/56241285/122071649-1e264800-ce21-11eb-9557-828b285e07f3.png)
+
 - Tampilan Kontak
+
 ![26](https://user-images.githubusercontent.com/56241285/122071675-23839280-ce21-11eb-83ac-0836435d288e.png)
