@@ -140,3 +140,68 @@ php spark serve
 - Tampilan Kontak
 
 ![26](https://user-images.githubusercontent.com/56241285/122071675-23839280-ce21-11eb-83ac-0836435d288e.png)
+
+# Praktikum 12 - Lanjutan Codeigniter - Pemrograman Web
+```
+Riska Puspa Anggraeni Putri
+311910440
+TI.19.A.2
+Universitas Pelita Bangsa
+```
+
+## Persiapan
+### Buat Database
+```
+CREATE DATABASE lab_ci4;
+```
+### Buat Tabel
+```
+CREATE TABLE artikel (
+ id INT(11) auto_increment,
+ judul VARCHAR(200) NOT NULL,
+ isi TEXT,
+ gambar VARCHAR(200),
+ status TINYINT(1) DEFAULT 0,
+ slug VARCHAR(200),
+ PRIMARY KEY(id)
+);
+```
+![1](https://user-images.githubusercontent.com/56241285/122758596-2e2ba500-d2c3-11eb-986c-75c26c2f496e.png)
+![2](https://user-images.githubusercontent.com/56241285/122758603-31269580-d2c3-11eb-9c72-7b499ac51c6b.png)
+## Langkah 1 - Konfigurasi Koneksi Database
+### Konfigurasi dapat dilakukan dengan cara mengubah beberapa kode pada file htdocs\lab11_php_ci\ci4\.env.
+
+- Cari pada line DATABASE
+- Ubah seperti berikut ini
+```
+# database.default.hostname = localhost
+# database.default.database = lab_ci4
+# database.default.username = root
+# database.default.password = 
+# database.default.DBDriver = MySQLi
+# database.default.DBPrefix =
+```
+- Hilangkan tanda pagar # didepan. Maka jadi seperti dibawah ini.
+```
+database.default.hostname = localhost
+database.default.database = lab_ci4
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+```
+![3](https://user-images.githubusercontent.com/56241285/122759157-d3467d80-d2c3-11eb-9527-6ac74d2f2041.png)
+## Langkah 2 - Membuat Model
+Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada folder app/Models dengan nama ArtikelModel.php
+
+![4](https://user-images.githubusercontent.com/56241285/122760400-46042880-d2c5-11eb-81b0-f2675ab3388f.png)
+## Langkah 3 - Membuat Controller
+Buat Controller baru dengan nama Artikel.php pada folder app/Controllers
+
+![5](https://user-images.githubusercontent.com/56241285/122760857-ca56ab80-d2c5-11eb-9636-cb899f8969c6.png)
+## Langkah 4 - Membuat View
+Buat folder baru dengan nama artikel pada folder app/views, kemudian buat file baru dengan nama index.php
+
+![6](https://user-images.githubusercontent.com/56241285/122761299-481ab700-d2c6-11eb-8f6f-18a6e3b1bc6d.png)
+
+Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
