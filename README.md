@@ -205,3 +205,8 @@ Buat folder baru dengan nama artikel pada folder app/views, kemudian buat file b
 ![6](https://user-images.githubusercontent.com/56241285/122761299-481ab700-d2c6-11eb-8f6f-18a6e3b1bc6d.png)
 
 Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
+
+![7](https://user-images.githubusercontent.com/56241285/122762592-adbb7300-d2c7-11eb-8479-0dc9c5b2ceb2.png)
+
+Kemudian tambahkan beberapa data pada database agar dapat ditampilkan datanya
+
