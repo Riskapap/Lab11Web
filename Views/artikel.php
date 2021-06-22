@@ -25,7 +25,6 @@
             vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
             pretium ac.</p>
     </article>
-    <p><?= $content; ?></p>
     <?= $this->include('template/footer'); ?>
 </body>
 </html>
