@@ -385,3 +385,61 @@ Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebu
 - Tampilan setelah akses login
 
 ![18](https://user-images.githubusercontent.com/56241285/123581888-04b0d300-d807-11eb-9618-e6c0d0bcbd6e.png)
+# Praktikum 14 - Lanjutan Codeigniter - Pemrograman Web
+```
+Riska Puspa Anggraeni Putri
+311910440
+TI19A2
+```
+## Langkah 1 - Membuat Pagination
+- Untuk membuat pagination, buka Kembali Controller Artikel.php di folder htdocs\lab11_php_ci\ci4\Controllers, kemudian modifikasi kode pada method admin_index seperti berikut
+
+![1](https://user-images.githubusercontent.com/56241285/124558911-4c69d700-de65-11eb-8488-f061e62e0bd8.png)
+
+- Kemudian buka file admin_index.php di folder views/artikel dan tambahkan kode berikut dibawah deklarasi tabel data.
+
+![2](https://user-images.githubusercontent.com/56241285/124559888-635cf900-de66-11eb-8f51-6bab2948c27b.png)
+
+- Kemudian buka file admin.css di folder public lalu tambahkan kode berikut untuk mempercantik tampilan pagination
+
+![3](https://user-images.githubusercontent.com/56241285/124561193-d024c300-de67-11eb-85be-463c69f5c9da.png)
+
+- Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+
+![4](https://user-images.githubusercontent.com/56241285/124562399-2e05da80-de69-11eb-86b3-1c4f04ab2a6d.png)
+## Langkah 2 - Membuat Pencarian
+- Untuk membuat pencarian data, buka kembali Controller Artikel.php di folder htdocs\lab11_php_ci\ci4\Controllers, pada method admin_index ubah kodenya seperti berikut
+
+![5](https://user-images.githubusercontent.com/56241285/124562846-b2f0f400-de69-11eb-8e94-fe5f6e9d8483.png)
+
+- Kemudian buka kembali file admin_index.php pada folder views/artikel dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut:
+
+![6](https://user-images.githubusercontent.com/56241285/124564095-e84a1180-de6a-11eb-8325-1c68cfeb5d52.png)
+
+- Dan pada link pager ubah seperti berikut
+
+![7](https://user-images.githubusercontent.com/56241285/124564321-247d7200-de6b-11eb-877d-752d445eb8af.png)
+
+- Kemudian buka file admin.css di folder public lalu tambahkan kode berikut untuk mempercantik tampilan pencarian
+
+![8](https://user-images.githubusercontent.com/56241285/124564570-65758680-de6b-11eb-9427-6e4de19610be.png)
+
+- Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+
+![9](https://user-images.githubusercontent.com/56241285/124564774-981f7f00-de6b-11eb-9e2c-ef15e55688bc.png)
+## Langkah 3 - Upload Gambar
+- Buka kembali Controller Artikel (htdocs\lab11_php_ci\ci4\Controllers\Artikel.php), sesuaikan kode pada method add seperti berikut:
+
+![10](https://user-images.githubusercontent.com/56241285/124565371-298ef100-de6c-11eb-9b62-fedf7752f533.png)
+
+- Kemudian pada file views/artikel/form_add.php tambahkan field input file Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
+
+![11](https://user-images.githubusercontent.com/56241285/124565806-9d30fe00-de6c-11eb-8c2a-750302ca2795.png)
+
+- Kemudian buka file public/admin.css tambahkan kode berikut untuk mempercantik tampilan tomboll upload gambar
+
+![12](https://user-images.githubusercontent.com/56241285/124565974-cea9c980-de6c-11eb-8edf-67c88225abdc.png)
+
+- Ujicoba file upload dengan mengakses menu tambah artikel
+
+![13](https://user-images.githubusercontent.com/56241285/124566660-7626fc00-de6d-11eb-8f8a-d3154959725a.png)
